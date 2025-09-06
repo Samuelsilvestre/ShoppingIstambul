@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_619e06d8e79f3ac8afe11625d482994e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_619e06d8e79f3ac8afe11625d482994e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_619e06d8e79f3ac8afe11625d482994e = L.map(
+                "map_619e06d8e79f3ac8afe11625d482994e",
+                {
+                    center: [41.0082, 28.9784],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8bfbbb86baa856c9dee84ff319532a25 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8bfbbb86baa856c9dee84ff319532a25.addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var marker_3fa961c7b1b25ca94b1065161ff28586 = L.marker(
+                [41.0531, 28.9859],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_91f9fbde159651110d6286b3fc41d6e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b134fb9217d2ed34f1dd80083a2fb2f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e54368e6e131c3eaf1327b0f75ac2a8 = $(`<div id="html_8e54368e6e131c3eaf1327b0f75ac2a8" style="width: 100.0%; height: 100.0%;"><b>Cevahir AVM</b><br>Total de Faturas: 4991<br>Feminino: 2940<br>Masculino: 2051</div>`)[0];
+                popup_b134fb9217d2ed34f1dd80083a2fb2f8.setContent(html_8e54368e6e131c3eaf1327b0f75ac2a8);
+            
+        
+
+        marker_3fa961c7b1b25ca94b1065161ff28586.bindPopup(popup_b134fb9217d2ed34f1dd80083a2fb2f8)
+        ;
+
+        
+    
+    
+            marker_3fa961c7b1b25ca94b1065161ff28586.bindTooltip(
+                `<div>
+                     Cevahir AVM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3fa961c7b1b25ca94b1065161ff28586.setIcon(icon_91f9fbde159651110d6286b3fc41d6e5);
+            
+    
+            var circle_marker_7d41e8e3f1fe64677ed5e3fa4c46ad8c = L.circleMarker(
+                [41.0531, 28.9859],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4955, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_7d41e8e3f1fe64677ed5e3fa4c46ad8c.bindTooltip(
+                `<div>
+                     Cevahir AVM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_41e91e7bdb2323bacf624c3202cd3ca9 = L.marker(
+                [41.00432, 29.07118],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_2053c53ab6d06fb55833f151a6fdd168 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffe26f70979426a8d808c096132ef687 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f57449bc27d18e9562e633ac99feee65 = $(`<div id="html_f57449bc27d18e9562e633ac99feee65" style="width: 100.0%; height: 100.0%;"><b>Emaar Square Mall</b><br>Total de Faturas: 4811<br>Feminino: 2842<br>Masculino: 1969</div>`)[0];
+                popup_ffe26f70979426a8d808c096132ef687.setContent(html_f57449bc27d18e9562e633ac99feee65);
+            
+        
+
+        marker_41e91e7bdb2323bacf624c3202cd3ca9.bindPopup(popup_ffe26f70979426a8d808c096132ef687)
+        ;
+
+        
+    
+    
+            marker_41e91e7bdb2323bacf624c3202cd3ca9.bindTooltip(
+                `<div>
+                     Emaar Square Mall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_41e91e7bdb2323bacf624c3202cd3ca9.setIcon(icon_2053c53ab6d06fb55833f151a6fdd168);
+            
+    
+            var circle_marker_006ee6879ebde5dacb148af98982c189 = L.circleMarker(
+                [41.00432, 29.07118],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4055, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_006ee6879ebde5dacb148af98982c189.bindTooltip(
+                `<div>
+                     Emaar Square Mall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_31986b2f8c97e8b3132468befa0f46ab = L.marker(
+                [41.045, 28.9038],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_3d6b7e16903d34ae8d34184f3a4e937b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e673b288f48e368969dd55b5750e2fc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a51b8b3b5695480397c0e079a4a486b8 = $(`<div id="html_a51b8b3b5695480397c0e079a4a486b8" style="width: 100.0%; height: 100.0%;"><b>Forum Istanbul</b><br>Total de Faturas: 4947<br>Feminino: 3016<br>Masculino: 1931</div>`)[0];
+                popup_e673b288f48e368969dd55b5750e2fc8.setContent(html_a51b8b3b5695480397c0e079a4a486b8);
+            
+        
+
+        marker_31986b2f8c97e8b3132468befa0f46ab.bindPopup(popup_e673b288f48e368969dd55b5750e2fc8)
+        ;
+
+        
+    
+    
+            marker_31986b2f8c97e8b3132468befa0f46ab.bindTooltip(
+                `<div>
+                     Forum Istanbul
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31986b2f8c97e8b3132468befa0f46ab.setIcon(icon_3d6b7e16903d34ae8d34184f3a4e937b);
+            
+    
+            var circle_marker_85d33d104ed7f648238e55f3e24487b0 = L.circleMarker(
+                [41.045, 28.9038],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4735, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_85d33d104ed7f648238e55f3e24487b0.bindTooltip(
+                `<div>
+                     Forum Istanbul
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5c9ff512d8a918e76b1111ab71560556 = L.marker(
+                [41.110438, 29.032919],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_f2357a6059c31ee800775f370d3aa7dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d56a2bbfb263b8197da6421c77ac9aa3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae5008b2527a24cb13810529fffe4511 = $(`<div id="html_ae5008b2527a24cb13810529fffe4511" style="width: 100.0%; height: 100.0%;"><b>Istinye Park</b><br>Total de Faturas: 9781<br>Feminino: 5874<br>Masculino: 3907</div>`)[0];
+                popup_d56a2bbfb263b8197da6421c77ac9aa3.setContent(html_ae5008b2527a24cb13810529fffe4511);
+            
+        
+
+        marker_5c9ff512d8a918e76b1111ab71560556.bindPopup(popup_d56a2bbfb263b8197da6421c77ac9aa3)
+        ;
+
+        
+    
+    
+            marker_5c9ff512d8a918e76b1111ab71560556.bindTooltip(
+                `<div>
+                     Istinye Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c9ff512d8a918e76b1111ab71560556.setIcon(icon_f2357a6059c31ee800775f370d3aa7dc);
+            
+    
+            var circle_marker_829f4e80d44af8f0e493b0fa0e7c5551 = L.circleMarker(
+                [41.110438, 29.032919],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8905, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_829f4e80d44af8f0e493b0fa0e7c5551.bindTooltip(
+                `<div>
+                     Istinye Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_749a1c21b9d7dc653735efb94b7ee418 = L.marker(
+                [41.0583, 29.0141],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_267a25a1f54b1b922830847618f906a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c716a1d3710e6100aa123c62afbb2fb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e67349f69c07de03f6f3c3383bdd40a7 = $(`<div id="html_e67349f69c07de03f6f3c3383bdd40a7" style="width: 100.0%; height: 100.0%;"><b>Kanyon</b><br>Total de Faturas: 19823<br>Feminino: 11906<br>Masculino: 7917</div>`)[0];
+                popup_c716a1d3710e6100aa123c62afbb2fb9.setContent(html_e67349f69c07de03f6f3c3383bdd40a7);
+            
+        
+
+        marker_749a1c21b9d7dc653735efb94b7ee418.bindPopup(popup_c716a1d3710e6100aa123c62afbb2fb9)
+        ;
+
+        
+    
+    
+            marker_749a1c21b9d7dc653735efb94b7ee418.bindTooltip(
+                `<div>
+                     Kanyon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_749a1c21b9d7dc653735efb94b7ee418.setIcon(icon_267a25a1f54b1b922830847618f906a0);
+            
+    
+            var circle_marker_0ab271c176afc98ba4814ec07bfa5b0e = L.circleMarker(
+                [41.0583, 29.0141],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.9115, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_0ab271c176afc98ba4814ec07bfa5b0e.bindTooltip(
+                `<div>
+                     Kanyon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_833a0eaad5896212206902af62995f97 = L.marker(
+                [41.062527, 28.804951],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_33ce13a307e76554913efe0e429e54b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53ce33956794645f52fbfbcef27de484 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bd0ebfdcbf3c60d6e3ad20de4d3c700 = $(`<div id="html_6bd0ebfdcbf3c60d6e3ad20de4d3c700" style="width: 100.0%; height: 100.0%;"><b>Mall of Istanbul</b><br>Total de Faturas: 19943<br>Feminino: 11902<br>Masculino: 8041</div>`)[0];
+                popup_53ce33956794645f52fbfbcef27de484.setContent(html_6bd0ebfdcbf3c60d6e3ad20de4d3c700);
+            
+        
+
+        marker_833a0eaad5896212206902af62995f97.bindPopup(popup_53ce33956794645f52fbfbcef27de484)
+        ;
+
+        
+    
+    
+            marker_833a0eaad5896212206902af62995f97.bindTooltip(
+                `<div>
+                     Mall of Istanbul
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_833a0eaad5896212206902af62995f97.setIcon(icon_33ce13a307e76554913efe0e429e54b8);
+            
+    
+            var circle_marker_6db70a8644da7bdc8f8fb4b68afae39d = L.circleMarker(
+                [41.062527, 28.804951],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.9715, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_6db70a8644da7bdc8f8fb4b68afae39d.bindTooltip(
+                `<div>
+                     Mall of Istanbul
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_314f5392da10a67297bff7bfe2ef0c20 = L.marker(
+                [41.0772, 29.0062],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_8d27dfaa5af9d147685bfba65f82a539 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ecbbbba646af2da585699fc5460afcf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43925f179899a9f8ecb50b463dec256c = $(`<div id="html_43925f179899a9f8ecb50b463dec256c" style="width: 100.0%; height: 100.0%;"><b>Metrocity</b><br>Total de Faturas: 15011<br>Feminino: 8941<br>Masculino: 6070</div>`)[0];
+                popup_1ecbbbba646af2da585699fc5460afcf.setContent(html_43925f179899a9f8ecb50b463dec256c);
+            
+        
+
+        marker_314f5392da10a67297bff7bfe2ef0c20.bindPopup(popup_1ecbbbba646af2da585699fc5460afcf)
+        ;
+
+        
+    
+    
+            marker_314f5392da10a67297bff7bfe2ef0c20.bindTooltip(
+                `<div>
+                     Metrocity
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_314f5392da10a67297bff7bfe2ef0c20.setIcon(icon_8d27dfaa5af9d147685bfba65f82a539);
+            
+    
+            var circle_marker_c9f7c43193bb293c34b31a88b6f789cb = L.circleMarker(
+                [41.0772, 29.0062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.5055, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_c9f7c43193bb293c34b31a88b6f789cb.bindTooltip(
+                `<div>
+                     Metrocity
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f86273589df3c9b5a1145c3ccd889092 = L.marker(
+                [40.9945, 29.1219],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_86bc4f4c3963243b0171c74424f43a23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5948e3ce103e031fbe0092c1b225715 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea2eecc456d2f364c2d0244cd48ecef4 = $(`<div id="html_ea2eecc456d2f364c2d0244cd48ecef4" style="width: 100.0%; height: 100.0%;"><b>Metropol AVM</b><br>Total de Faturas: 10161<br>Feminino: 6144<br>Masculino: 4017</div>`)[0];
+                popup_e5948e3ce103e031fbe0092c1b225715.setContent(html_ea2eecc456d2f364c2d0244cd48ecef4);
+            
+        
+
+        marker_f86273589df3c9b5a1145c3ccd889092.bindPopup(popup_e5948e3ce103e031fbe0092c1b225715)
+        ;
+
+        
+    
+    
+            marker_f86273589df3c9b5a1145c3ccd889092.bindTooltip(
+                `<div>
+                     Metropol AVM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f86273589df3c9b5a1145c3ccd889092.setIcon(icon_86bc4f4c3963243b0171c74424f43a23);
+            
+    
+            var circle_marker_ab18aacc87d6ceeee7c26f1013fd517c = L.circleMarker(
+                [40.9945, 29.1219],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0805, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_ab18aacc87d6ceeee7c26f1013fd517c.bindTooltip(
+                `<div>
+                     Metropol AVM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f37259c40f36c154b834c556ec443aff = L.marker(
+                [40.9238, 29.3093],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_518c79dcd10568ef9ad7fb530d5b1b29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54e8a32806fc2029648ecc7550ef2f51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_142ec0e7c1f602c52ea06fe3aec4627e = $(`<div id="html_142ec0e7c1f602c52ea06fe3aec4627e" style="width: 100.0%; height: 100.0%;"><b>Viaport Outlet</b><br>Total de Faturas: 4914<br>Feminino: 2949<br>Masculino: 1965</div>`)[0];
+                popup_54e8a32806fc2029648ecc7550ef2f51.setContent(html_142ec0e7c1f602c52ea06fe3aec4627e);
+            
+        
+
+        marker_f37259c40f36c154b834c556ec443aff.bindPopup(popup_54e8a32806fc2029648ecc7550ef2f51)
+        ;
+
+        
+    
+    
+            marker_f37259c40f36c154b834c556ec443aff.bindTooltip(
+                `<div>
+                     Viaport Outlet
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f37259c40f36c154b834c556ec443aff.setIcon(icon_518c79dcd10568ef9ad7fb530d5b1b29);
+            
+    
+            var circle_marker_ece102bf3cca1170b9503c7b0109d9cb = L.circleMarker(
+                [40.9238, 29.3093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.457, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_ece102bf3cca1170b9503c7b0109d9cb.bindTooltip(
+                `<div>
+                     Viaport Outlet
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0c578cf0f00c9712f822860dc7586983 = L.marker(
+                [41.0678, 29.0163],
+                {
+}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            var icon_2f2f9b50f2520d5ebccdcb634fd35761 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7604a7c8ea58921c0aa917fc232cebab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e6e9e498dcc58b4fa23fa02beda2d1e = $(`<div id="html_9e6e9e498dcc58b4fa23fa02beda2d1e" style="width: 100.0%; height: 100.0%;"><b>Zorlu Center</b><br>Total de Faturas: 5075<br>Feminino: 2968<br>Masculino: 2107</div>`)[0];
+                popup_7604a7c8ea58921c0aa917fc232cebab.setContent(html_9e6e9e498dcc58b4fa23fa02beda2d1e);
+            
+        
+
+        marker_0c578cf0f00c9712f822860dc7586983.bindPopup(popup_7604a7c8ea58921c0aa917fc232cebab)
+        ;
+
+        
+    
+    
+            marker_0c578cf0f00c9712f822860dc7586983.bindTooltip(
+                `<div>
+                     Zorlu Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c578cf0f00c9712f822860dc7586983.setIcon(icon_2f2f9b50f2520d5ebccdcb634fd35761);
+            
+    
+            var circle_marker_07988a0bace1155450e40779eba39418 = L.circleMarker(
+                [41.0678, 29.0163],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5375, "stroke": true, "weight": 3}
+            ).addTo(map_619e06d8e79f3ac8afe11625d482994e);
+        
+    
+            circle_marker_07988a0bace1155450e40779eba39418.bindTooltip(
+                `<div>
+                     Zorlu Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
